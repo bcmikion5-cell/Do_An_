@@ -114,7 +114,7 @@
         </nav>
 
     </div>
-    <form action="/action_page.php" class="was-validated border border-5 rounded p-4 m-4 w-50 mx-auto">
+    <!-- <form action="/action_page.php" class="was-validated border border-5 rounded p-4 m-4 w-50 mx-auto">
         <div class="form-floating mb-3 mt-3 container-fluid">
             <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
             <label for="email">Email</label>
@@ -130,7 +130,26 @@
          <button type="submit" class="btn btn-outline-primary px-4  " >Đăng Ký
         </button>
         </div>
-    </form>
+    </form> -->
+
+
+    <form action="http://localhost:3000/login" method="POST" class="was-validated border border-5 rounded p-4 m-4 w-50 mx-auto">
+    <div class="form-floating mb-3 mt-3">
+        <input type="text" class="form-control" name="email" placeholder="Enter email">
+        <label>Email</label>
+    </div>
+
+    <div class="form-floating mt-3 mb-3">
+        <input type="password" class="form-control" name="password" placeholder="Enter password">
+        <label>Password</label>
+    </div>
+
+    <div class="d-flex justify-content-center gap-3"> 
+        <button type="submit" class="btn btn-primary px-4">Đăng Nhập</button>
+    </div>
+</form>
+
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
